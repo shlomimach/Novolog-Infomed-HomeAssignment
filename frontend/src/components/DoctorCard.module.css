@@ -1,0 +1,161 @@
+.card {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr 210px;
+    align-items: start;
+    gap: 16px;
+    min-height: 142px;
+    padding: 22px 24px;
+    background: #fff;
+    border: 1px solid #e4e9ed;
+    direction: rtl;
+}
+
+
+.doctorInfo {
+    text-align: right;
+}
+
+.name {
+    margin: 0 0 4px;
+    color: #141414;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.stars {
+    position: relative;
+    flex: 0 0 92px;
+    width: 92px;
+    height: 16px;
+    background: url('/stars_stroke.png') no-repeat right center;
+    background-size: 92px 16px;
+}
+
+.filledStars {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 16px;
+    background: url('/stars_fill.png') no-repeat right center;
+    background-size: 92px 16px;
+}
+
+.reviewCount {
+    color: #64748b;
+    font-size: 12px;
+}
+
+.stars>img {
+    display: block;
+    width: 92px;
+    height: 16px;
+}
+
+
+
+.filledStars img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 92px;
+    height: 16px;
+    max-width: none;
+}
+
+.ratingNumber {
+    color: #666;
+    font-size: 13px;
+}
+
+.city {
+    margin: 7px 0 0;
+    color: #7c8793;
+    font-size: 13px;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.details {
+    text-align: right;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.details p {
+    margin: 0;
+}
+
+.details strong {
+    color: #1c1c1c;
+    font-weight: 500;
+}
+
+.details span {
+    color: #9c683b;
+}
+
+
+.actionButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-height: 38px;
+    padding: 7px 12px;
+    border: 1px solid #0095c9;
+    border-radius: 5px;
+    background: #fff;
+    color: #171717;
+    font: inherit;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.actionButton span:first-child {
+    color: #0095c9;
+    font-size: 19px;
+}
+
+.actionButton:hover {
+    background: #edfaff;
+}
+
+.actionButton:focus-visible {
+    outline: 3px solid #70cde9;
+    outline-offset: 2px;
+}
+
+.unavailable {
+    padding: 8px;
+    color: #777;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .card {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 22px 18px;
+    }
+
+    .actions {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .actionButton {
+        flex: 1 1 150px;
+    }
+}

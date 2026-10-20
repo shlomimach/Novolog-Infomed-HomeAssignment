@@ -1,0 +1,20 @@
+
+# .NET
+**/bin/
+**/obj/
+
+# React
+**/node_modules/
+**/dist/
+
+# Private contact requests
+backend/Novolog.Api/Storage/
+
+# Local configuration and secrets
+.env
+.env.*
+**/appsettings.Development.local.json
+
+# IDE
+.vs/
+.vscode/

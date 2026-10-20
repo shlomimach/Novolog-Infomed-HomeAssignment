@@ -1,0 +1,51 @@
+.page {
+    width: min(1200px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 28px 0 60px;
+    scroll-margin-top: 110px;
+}
+
+.header {
+    margin-bottom: 28px;
+}
+
+.brand {
+    margin-bottom: 14px;
+}
+
+.logo {
+    display: block;
+    width: 146px;
+    height: auto;
+}
+
+.brand span {
+    color: #27b885;
+}
+
+.header h1 {
+    margin: 0 0 8px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.header p {
+    margin: 0;
+    color: #64748b;
+}
+
+.count {
+    margin: 0 0 16px;
+    color: #475569;
+}
+
+@media (max-width: 600px) {
+    .page {
+        width: calc(100% - 24px);
+        padding-top: 20px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+}

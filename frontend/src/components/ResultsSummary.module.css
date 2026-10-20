@@ -1,0 +1,44 @@
+.summary {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 16px;
+    padding: 14px 20px;
+    background: #edf7fb;
+    border-right: 4px solid #0095c9;
+    border-radius: 5px;
+    color: #334155;
+}
+
+.filterInfo {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px 28px;
+}
+
+.count {
+    color: #007da8;
+    font-size: 17px;
+}
+
+.filterText {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.filterText strong {
+    color: #007da8;
+    font-weight: 700;
+}
+
+.sortInfo {
+    margin: 0;
+    color: #526172;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.sortInfo strong {
+    color: #334155;
+}

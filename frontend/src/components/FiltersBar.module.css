@@ -1,0 +1,30 @@
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px;
+    margin: 0 0 24px;
+    padding: 16px 22px;
+    border: 1px solid #e4e9ed;
+    border-radius: 6px;
+    background: #fff;
+}
+
+.filters legend {
+    padding: 0 8px;
+    font-weight: 600;
+}
+
+.option {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    cursor: pointer;
+}
+
+.option input {
+    width: 17px;
+    height: 17px;
+    accent-color: #0095c9;
+    cursor: pointer;
+}

@@ -1,0 +1,74 @@
+.backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(15, 23, 42, 0.6);
+}
+
+.modal {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 16px 60px rgba(0, 0, 0, 0.2);
+}
+
+.modal h2 {
+    margin: 0 0 24px;
+    font-size: 21px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    border: 0;
+    background: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form input {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    color: #1e293b;
+}
+
+.submit {
+    padding: 12px;
+    border: 0;
+    border-radius: 5px;
+    background: #0095c9;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+}
+
+.submit:disabled {
+    opacity: 0.65;
+    cursor: wait;
+}
+
+.error {
+    color: #c62828;
+}
